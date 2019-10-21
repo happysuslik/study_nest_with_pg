@@ -1,6 +1,6 @@
 import addJestHbsExtension from 'jest-hbs-extension';
-import {CONFIG} from '../src/config/config';
+import {resolve} from 'path';
 
-const views = CONFIG.templates.path;
+const views = resolve(__dirname, '..', 'views');
 
 addJestHbsExtension(views);

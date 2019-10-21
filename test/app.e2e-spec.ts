@@ -22,11 +22,11 @@ describe('LocationController (e2e)', () => {
       .then(({ text }) => {
         expect(text).toMatchCompiledHandlebarsTemplate('list.hbs', {
           locations: [
-            'Location 1',
-            'Location 2',
-            'Location 3',
+            { name: 'test 1' },
+            { name: 'test 2' },
           ],
         });
       });
   });
 });
+

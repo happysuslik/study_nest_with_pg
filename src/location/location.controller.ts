@@ -16,10 +16,6 @@ export class LocationController {
   @Render('list.hbs')
   public async listLocations(): Promise<LocationListDto> {
     const locations = await this.locationService.list();
-    console.log('locations => ', locations);
-    // const dtos = locations.map(location =>
-    //   this.mappingRegistryService.map<LocationDto>(location.name, LocationDto.name, location));
-
     return { locations: [...locations] };
   }
 
