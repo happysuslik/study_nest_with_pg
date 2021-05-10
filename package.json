@@ -28,7 +28,7 @@
     "automapper-ts": "^1.9.0",
     "config": "^3.2.3",
     "hbs": "^4.0.6",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "pg": "^7.12.1",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.0",
